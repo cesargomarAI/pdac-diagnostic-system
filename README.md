@@ -4,6 +4,10 @@
 ![Streamlit](https://img.shields.io/badge/Deployment-Live%20App-red)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 
+<p align="center">
+  <img src="logo.png" width="200">
+</p>
+
 ### 🚀 Accede a la aplicación en vivo aquí:
 👉 **[CLICK PARA ABRIR LA APP INTERACTIVA](https://pdac-diagnostic-system-7jyt3cxbcaqwmravjnog5b.streamlit.app/)**
 
