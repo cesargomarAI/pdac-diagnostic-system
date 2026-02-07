@@ -1,6 +1,7 @@
 # 🏥 PDAC Diagnostic Support System (v2.0)
-<img width="1024" height="1024" alt="logo png" src="https://github.com/user-attachments/assets/f892728d-8af3-4ffc-abec-a0bcb608ede9" />
-
+<p align="center">
+  <img src="logo png" src="https://github.com/user-attachments/assets/f892728d-8af3-4ffc-abec-a0bcb608ede9" width="200">
+</p>
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-green)
 ![Streamlit](https://img.shields.io/badge/Deployment-Live%20App-red)
