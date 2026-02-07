@@ -40,3 +40,5 @@ docker run -p 8501:8501 pdac-sys
 
 ---
 **Desarrollado por Cesar - Applied AI Engineer**
+<img width="1024" height="1024" alt="logo" src="https://github.com/user-attachments/assets/fffcc24d-bcf3-4cd9-9c40-9d938adb59c4" />
+
