@@ -14,6 +14,7 @@ texts = {
     "English": {
         "title": "🏥 PDAC Diagnostic Support System",
         "subtitle": "Advanced AI for early pancreatic cancer detection",
+        "info_wait": "👋 Enter data and press 'Run Analysis'.",
         "lang_label": "Choose Language / Seleccione Idioma",
         "header_lab": "📥 Laboratory Data",
         "age": "Patient Age",
@@ -30,12 +31,12 @@ texts = {
         "alert_low": "✅ **INFO: LOW RISK**",
         "btn_report": "📄 GENERATE OFFICIAL CLINICAL REPORT",
         "btn_download": "⬇️ Download PDF",
-        "info_wait": "👋 Enter data and press 'Run Analysis'.",
         "footer": "Applied AI Engineer: Cesar"
     },
     "Spanish": {
         "title": "🏥 Sistema de Apoyo al Diagnóstico - PDAC",
         "subtitle": "IA avanzada para la detección precoz de cáncer de páncreas",
+        "info_wait": "👋 Introduzca los datos y pulse 'Realizar Análisis'.",
         "lang_label": "Seleccione Idioma / Choose Language",
         "header_lab": "📥 Datos del Laboratorio",
         "age": "Edad del paciente",
@@ -52,7 +53,6 @@ texts = {
         "alert_low": "✅ **INFO: RIESGO BAJO**",
         "btn_report": "📄 GENERAR INFORME CLÍNICO OFICIAL",
         "btn_download": "⬇️ Descargar PDF",
-        "info_wait": "👋 Introduzca los datos y pulse 'Realizar Análisis'.",
         "footer": "Applied AI Engineer: Cesar"
     }
 }
