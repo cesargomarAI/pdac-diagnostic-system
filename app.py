@@ -162,5 +162,5 @@ st.write("")
 st.divider()
 col_f1, col_f2, col_f3 = st.columns([1, 2, 1])
 with col_f2:
-    st.image("logo.png", width=250)
-    st.markdown(f"<p style='text-align: center; color: silver;'>{t['footer']}</p>", unsafe_allow_html=True)
+    st.image("logo.png", use_container_width=True)
+    st.markdown(f"<p style='text-align: center; color: silver; font-size: 0.8rem;'>{t['footer']}</p>", unsafe_allow_html=True)
