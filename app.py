@@ -74,6 +74,7 @@ if 'prediccion_lista' not in st.session_state:
 
 # --- ENTRADA DE DATOS (CENTRAL & RESPONSIVE) ---
 st.subheader(t["header_lab"])
+st.info(t["info_wait"])
 col_a, col_b = st.columns(2)
 
 with col_a:
@@ -154,8 +155,7 @@ if st.session_state.prediccion_lista:
         except Exception as e:
             st.error(f"Error técnico en el generador: {e}")
             st.info("Sugerencia: Haz un 'Reboot' desde el panel de Streamlit para sincronizar los módulos.")
-else:
-    st.info(t["info_wait"])
+
 
 # --- FOOTER & LOGO ---
 st.write("")
