@@ -129,7 +129,8 @@ if st.session_state.prediccion_lista:
 
     st.write("")
     if st.button(t["btn_report"], use_container_width=True):
-        nombre_archivo = informe_medico.generar_pdf(st.session_state.datos_paciente, probs)
+       # Pasamos 'sel_lang' que es la variable donde guardamos el idioma elegido
+        nombre_archivo = informe_medico.generar_pdf(st.session_state.datos_paciente, probs, sel_lang)
         if os.path.exists(nombre_archivo):
             st.success(f"✅ {nombre_archivo}")
             with open(nombre_archivo, "rb") as f:
