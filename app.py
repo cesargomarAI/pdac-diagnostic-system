@@ -129,12 +129,31 @@ if st.session_state.prediccion_lista:
 
     st.write("")
     if st.button(t["btn_report"], use_container_width=True):
-       # Pasamos 'sel_lang' que es la variable donde guardamos el idioma elegido
-        nombre_archivo = informe_medico.generar_pdf(st.session_state.datos_paciente, probs, sel_lang)
-        if os.path.exists(nombre_archivo):
-            st.success(f"✅ {nombre_archivo}")
-            with open(nombre_archivo, "rb") as f:
-                st.download_button(label=t["btn_download"], data=f, file_name=nombre_archivo, mime="application/pdf", use_container_width=True)
+        # SOLUCIÓN PRO: Forzamos la recarga del módulo justo antes de usarlo
+        import importlib
+        importlib.reload(informe_medico)
+        
+        try:
+            # Usamos argumentos nombrados (keyword arguments) para evitar cualquier ambigüedad
+            nombre_archivo = informe_medico.generar_pdf(
+                datos_paciente=st.session_state.datos_paciente, 
+                probabilidades=probs, 
+                idioma=sel_lang
+            )
+            
+            if os.path.exists(nombre_archivo):
+                st.success(f"✅ {nombre_archivo}")
+                with open(nombre_archivo, "rb") as f:
+                    st.download_button(
+                        label=t["btn_download"], 
+                        data=f, 
+                        file_name=nombre_archivo, 
+                        mime="application/pdf", 
+                        use_container_width=True
+                    )
+        except Exception as e:
+            st.error(f"Error técnico en el generador: {e}")
+            st.info("Sugerencia: Haz un 'Reboot' desde el panel de Streamlit para sincronizar los módulos.")
 else:
     st.info(t["info_wait"])
 
